@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const tarefasController = require('../controllers/tarefasController');
-
 // Definindo as rotas para CRUD das tarefas
 router.get('/', tarefasController.getAllTarefas);
 router.post('/', tarefasController.createTarefa);

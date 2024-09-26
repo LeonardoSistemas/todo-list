@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+
     // Função para adicionar uma tarefa ao DOM (interface do usuário)
     function addTaskToDOM(id, descricao) {
         const row = document.createElement('tr');
@@ -89,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Erro ao excluir tarefa:', error);
         }
     }
+
     const editTaskModal = new bootstrap.Modal(document.getElementById('editTaskModal'));
     const editTaskDesc = document.getElementById('edit-task-desc');
     let currentTaskId = null;  // Variável para armazenar o ID da tarefa a ser editada
@@ -133,4 +135,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Carregar as tarefas quando a página for carregada
     fetchTasks();
-});
+}); 
